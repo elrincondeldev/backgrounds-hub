@@ -32,11 +32,13 @@ A modern and elegant React application that allows users to customize and previe
 ### Installation
 
 1. Clone the repository:
+
 ```bash
-git clone [your-repo-url]
+git clone https://github.com/elrincondeldev/backgrounds-hub
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -44,6 +46,7 @@ yarn install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 # or
@@ -60,7 +63,9 @@ yarn dev
 ## 🔧 Components
 
 ### Buttons Component
+
 The main interactive component that provides:
+
 - Preview functionality
 - Code copying to clipboard
 - Toast notifications for user feedback
@@ -69,6 +74,7 @@ The main interactive component that provides:
 ## 🎨 Customization
 
 The application uses TailwindCSS for styling, making it easy to customize:
+
 - Modify colors using Tailwind's color palette
 - Adjust spacing and sizing with utility classes
 - Customize component styles through the Tailwind configuration
@@ -76,6 +82,7 @@ The application uses TailwindCSS for styling, making it easy to customize:
 ## 📦 Storage
 
 The application uses localStorage to persist user preferences:
+
 - Selected background code
 - Background name
 - User preferences
@@ -83,6 +90,7 @@ The application uses localStorage to persist user preferences:
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to:
+
 1. Fork the repository
 2. Create a feature branch
 3. Commit your changes
@@ -96,6 +104,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📫 Contact
 
 If you have any questions or suggestions, feel free to reach out:
+
 - jrmh.business@gmail.com
 - https://www.instagram.com/elrincondeldev/
 
