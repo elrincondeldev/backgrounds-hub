@@ -116,3 +116,115 @@ export const MinimalLightGrid = () => {
     </div>
   );
 };
+
+// Nuevos Backgrounds Espectaculares
+
+// Aurora Boreal Effect
+export const AuroraBorealis = () => {
+  return (
+    <div className="absolute inset-0 z-10 h-full w-full bg-slate-900 overflow-hidden">
+      <div className="absolute inset-0 bg-[conic-gradient(from_0deg_at_50%_50%,#3b82f6_0deg,#10b981_72deg,#6366f1_144deg,#8b5cf6_216deg,#ec4899_288deg,#3b82f6_360deg)] animate-[spin_4s_linear_infinite] opacity-50 blur-[100px]" />
+      <div className="absolute inset-0 bg-slate-900 opacity-75" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_600px_at_50%_-100%,#ffffff10,transparent)]" />
+    </div>
+  );
+};
+
+// Cristal Morphism
+export const CrystalMorphism = () => {
+  return (
+    <div className="absolute inset-0 z-10 h-full w-full bg-gradient-to-br from-white/40 to-white/10 backdrop-blur-xl">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_-30%_100%,#7dd3fc40,transparent)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_130%_-30%,#818cf840,transparent)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:20px_20px]" />
+    </div>
+  );
+};
+
+// Nebula Effect
+export const NebulaBackground = () => {
+  return (
+    <div className="absolute inset-0 z-10 h-full w-full bg-black">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_40%_40%,#4c1d95,transparent)] opacity-60" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_600px_at_60%_60%,#1d4ed8,transparent)] opacity-60" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_900px_at_50%_50%,#0f172a,transparent)] opacity-40" />
+      <div className="absolute inset-0 [background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjA1Ii8+PC9zdmc+')] opacity-50" />
+    </div>
+  );
+};
+
+// Holographic Wave
+export const HolographicWave = () => {
+  return (
+    <div className="absolute inset-0 z-10 h-full w-full bg-gradient-to-br from-black to-slate-900">
+      <div className="absolute inset-0 bg-[conic-gradient(from_180deg_at_50%_50%,#3b82f680_0deg,#10b98180_72deg,#6366f180_144deg,#8b5cf680_216deg,#ec489980_288deg,#3b82f680_360deg)] animate-[spin_3s_linear_infinite] blur-[75px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.07)_2px,transparent_2px),linear-gradient(90deg,rgba(255,255,255,0.07)_2px,transparent_2px)] bg-[size:40px_40px]" />
+    </div>
+  );
+};
+
+// Geometric Art
+export const GeometricArt = () => {
+  return (
+    <div className="absolute inset-0 z-10 h-full w-full bg-white">
+      <div className="absolute inset-0 bg-[repeating-linear-gradient(45deg,#f0f0f0_0px,#f0f0f0_1px,transparent_2px,transparent_8px)]" />
+      <div className="absolute inset-0 bg-[repeating-linear-gradient(-45deg,#f0f0f0_0px,#f0f0f0_1px,transparent_2px,transparent_8px)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_50%_50%,#4f46e520,transparent)]" />
+    </div>
+  );
+};
+
+// Liquid Gradient
+export const LiquidGradient = () => {
+  return (
+    <div className="absolute inset-0 z-10 h-full w-full bg-gradient-to-br from-violet-500 to-indigo-500">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_0%_0%,#ffffff40,transparent)] animate-pulse" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_100%_100%,#ffffff30,transparent)] animate-pulse" />
+      <div className="absolute inset-0 backdrop-blur-[100px]" />
+    </div>
+  );
+};
+
+// Cyber Grid
+export const CyberGrid = () => {
+  return (
+    <div className="absolute inset-0 z-10 h-full w-full bg-black">
+      <div className="absolute inset-0 bg-[linear-gradient(#00ffff15_1px,transparent_1px),linear-gradient(90deg,#00ffff15_1px,transparent_1px)] bg-[size:40px_40px]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_400px_at_50%_300px,#0000ff15,transparent)]" />
+      <div className="absolute bottom-0 h-1/2 w-full bg-gradient-to-t from-[#ff00ff10] to-transparent" />
+    </div>
+  );
+};
+
+// Frosted Glass
+export const FrostedGlass = () => {
+  return (
+    <div className="absolute inset-0 z-10 h-full w-full bg-white/30 backdrop-blur-xl">
+      <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.3),rgba(255,255,255,0.1))]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,rgba(255,255,255,0.2),transparent)]" />
+      <div className="absolute inset-0 [background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjA1Ii8+PC9zdmc+')] opacity-30" />
+    </div>
+  );
+};
+
+// Rainbow Mesh
+export const RainbowMesh = () => {
+  return (
+    <div className="absolute inset-0 z-10 h-full w-full bg-white overflow-hidden">
+      <div className="absolute -inset-[100%] bg-[conic-gradient(from_0deg,#ff6b6b,#4ecdc4,#45b7d1,#96c93d,#ff6b6b)] animate-[spin_10s_linear_infinite] blur-[50px] opacity-30" />
+      <div className="absolute inset-0 bg-white/80" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.05)_1.5px,transparent_1.5px),linear-gradient(90deg,rgba(0,0,0,0.05)_1.5px,transparent_1.5px)] bg-[size:30px_30px]" />
+    </div>
+  );
+};
+
+// Neon Pulse
+export const NeonPulse = () => {
+  return (
+    <div className="absolute inset-0 z-10 h-full w-full bg-black">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_400px_at_50%_-100%,#ff00ff30,transparent)] animate-pulse" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_400px_at_50%_200%,#00ffff30,transparent)] animate-pulse" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.07)_1px,transparent_1px)] bg-[size:100px_100px]" />
+    </div>
+  );
+};

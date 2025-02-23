@@ -1,15 +1,13 @@
 ---
 import "../styles/global.css";
-import Github from "../icons/Github";
 import Content from "./Content";
 import Info from "./Info";
 ---
 
 <div class="relative min-h-screen w-full">
-  <div id="background-container" class="fixed inset-0 -z-10">
-    <div class="absolute inset-0 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
-      <div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)]"></div>
-    </div>
+  <div id="background-container" class="fixed inset-0 z-10 h-full w-full bg-gradient-to-br from-black to-slate-900">
+    <div class="absolute inset-0 bg-[conic-gradient(from_180deg_at_50%_50%,#3b82f680_0deg,#10b98180_72deg,#6366f180_144deg,#8b5cf680_216deg,#ec489980_288deg,#3b82f680_360deg)] animate-[spin_3s_linear_infinite] blur-[75px]" />
+    <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.07)_2px,transparent_2px),linear-gradient(90deg,rgba(255,255,255,0.07)_2px,transparent_2px)] bg-[size:40px_40px]" />
   </div>
 
   <section class="relative z-10 flex flex-col items-center justify-center gap-10">

@@ -17,33 +17,19 @@ import {
   SoftGradientBlue,
   SoftGradientGray,
   MinimalVignette,
+  AuroraBorealis,
+  CrystalMorphism,
+  NebulaBackground,
+  HolographicWave,
+  GeometricArt,
+  LiquidGradient,
+  CyberGrid,
+  FrostedGlass,
+  RainbowMesh,
+  NeonPulse,
 } from "./Backgrounds";
 
 const backgrounds = [
-  // {
-  //   component: MinimalDark,
-  //   name: "MinimalDark",
-  //   displayName: "Minimal Dark",
-  //   isDark: true,
-  // },
-  // {
-  //   component: MinimalDarkWithNoise,
-  //   name: "MinimalDarkWithNoise",
-  //   displayName: "Minimal Dark with Noise",
-  //   isDark: true,
-  // },
-  // {
-  //   component: MinimalDarkGradient,
-  //   name: "MinimalDarkGradient",
-  //   displayName: "Minimal Dark Gradient",
-  //   isDark: true,
-  // },
-  // {
-  //   component: MinimalDarkSpotlight,
-  //   name: "MinimalDarkSpotlight",
-  //   displayName: "Minimal Dark Spotlight",
-  //   isDark: true,
-  // },
   {
     component: MinimalLight,
     name: "MinimalLight",
@@ -98,12 +84,6 @@ const backgrounds = [
     displayName: "Minimal Gradient Subtle",
     isDark: false,
   },
-  // {
-  //   component: MinimalDarkGradientSubtle,
-  //   name: "MinimalDarkGradientSubtle",
-  //   displayName: "Minimal Dark Gradient Subtle",
-  //   isDark: true,
-  // },
   {
     component: MinimalSpotlightPattern,
     name: "MinimalSpotlightPattern",
@@ -134,12 +114,66 @@ const backgrounds = [
     displayName: "Minimal Vignette",
     isDark: false,
   },
-  // {
-  //   component: MinimalDarkVignette,
-  //   name: "MinimalDarkVignette",
-  //   displayName: "Minimal Dark Vignette",
-  //   isDark: true,
-  // },
+  {
+    component: CyberGrid,
+    name: "DarkCyberGrid",
+    displayName: "Cyber Grid",
+    isDark: false,
+  },
+  {
+    component: FrostedGlass,
+    name: "FrostedGlass",
+    displayName: "Frosted Glass",
+    isDark: false,
+  },
+  {
+    component: RainbowMesh,
+    name: "RainbowMesh",
+    displayName: "Rainbow Mesh",
+    isDark: false,
+  },
+  {
+    component: NeonPulse,
+    name: "DarkNeonPulse",
+    displayName: "Neon Pulse",
+    isDark: false,
+  },
+  {
+    component: AuroraBorealis,
+    name: "DarkAuroraBorealis",
+    displayName: "Aurora Borealis",
+    isDark: false,
+  },
+  {
+    component: CrystalMorphism,
+    name: "CrystalMorphism",
+    displayName: "Crystal Morphism",
+    isDark: false,
+  },
+  {
+    component: NebulaBackground,
+    name: "DarkNebulaBackground",
+    displayName: "Nebula Background",
+    isDark: false,
+  },
+  {
+    component: HolographicWave,
+    name: "DarkHolographicWave",
+    displayName: "Holographic Wave",
+    isDark: false,
+  },
+  {
+    component: GeometricArt,
+    name: "GeometricArt",
+    displayName: "Geometric Art",
+    isDark: false,
+  },
+  {
+    component: LiquidGradient,
+    name: "DarkLiquidGradient",
+    displayName: "Liquid Gradient",
+    isDark: false,
+  },
 ];
 
 function Content() {
