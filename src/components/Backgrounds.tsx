@@ -56,7 +56,7 @@ export const MinimalDots = () => {
 export const MinimalDarkDots = () => {
   return (
     <div className="absolute inset-0 z-10 h-full w-full bg-[#0a0a0a]">
-      <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:16px_16px]" />
+      <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.20)_1px,transparent_1px)] bg-[size:16px_16px]" />
     </div>
   );
 };

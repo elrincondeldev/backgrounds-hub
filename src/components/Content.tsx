@@ -1,4 +1,5 @@
 import Buttons from "./Buttons";
+import { useBackgroundStore } from "../store/backgroundStore";
 
 // Minimal Dark Backgrounds
 import {
@@ -142,14 +143,20 @@ const backgrounds = [
 ];
 
 function Content() {
+  const { backgroundName } = useBackgroundStore();
+
   return (
-    <section className="overflow-hidden px-4 pb-20 pt-20 md:px-10 w-full">
+    <section className="overflow-hidden px-4 py-20 md:px-10 w-full">
       <div className="grid grid-cols-1 gap-6 pb-6 md:grid-cols-2 lg:grid-cols-4">
         {backgrounds.map(
           ({ component: Background, name, displayName, isDark }) => (
             <div
               key={name}
-              className="group relative min-h-[300px] w-full overflow-hidden rounded-xl ring-1 ring-slate-900/10"
+              className={
+                backgroundName.includes("Dark")
+                  ? "group relative min-h-[300px] w-full overflow-hidden rounded-xl ring-1 ring-slate-200/50"
+                  : "group relative min-h-[300px] w-full overflow-hidden rounded-xl ring-1 ring-slate-900/10"
+              }
             >
               <div className="absolute left-4 top-4 z-20">
                 <Buttons component={<Background />} name={name} />

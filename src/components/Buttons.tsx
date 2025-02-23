@@ -28,6 +28,7 @@ const Buttons: React.FC<ButtonsProps> = ({ component, name }) => {
   const handlePreview = () => {
     try {
       const code = ReactDOMServer.renderToStaticMarkup(component);
+      setBackgroundName(name);
       localStorage.setItem("selectedBackground", code);
       localStorage.setItem("selectedBackgroundName", name);
       setToastMessage("Background applied! Scroll to top to see it.");
