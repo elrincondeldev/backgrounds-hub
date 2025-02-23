@@ -146,7 +146,7 @@ const backgrounds = [
   },
   {
     component: CrystalMorphism,
-    name: "CrystalMorphism",
+    name: "DarkCrystalMorphism",
     displayName: "Crystal Morphism",
     isDark: false,
   },

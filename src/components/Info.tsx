@@ -1,15 +1,29 @@
+import { useEffect, useState } from "react";
 import Github from "../icons/Github";
 import { useBackgroundStore } from "../store/backgroundStore";
 
 function Info() {
   const { backgroundName } = useBackgroundStore();
+  const [localStorageBackgroundName, setLocalStorageBackgroundName] = useState<
+    string | null
+  >(null);
+
+  useEffect(() => {
+    const storedName = localStorage.getItem("selectedBackgroundName");
+    setLocalStorageBackgroundName(storedName);
+  }, []);
+
+  const isDark =
+    backgroundName.includes("Dark") ||
+    (localStorageBackgroundName !== null &&
+      localStorageBackgroundName.includes("Dark"));
 
   return (
     <div className="flex flex-col gap-5 items-center">
       <div className="md:w-[40rem]">
         <p
           className={
-            backgroundName.includes("Dark") || backgroundName === ""
+            isDark
               ? "text-xl text-gray-200 mb-2 text-center"
               : "text-xl text-gray-700 mb-2 text-center"
           }
@@ -18,7 +32,7 @@ function Info() {
         </p>
         <p
           className={
-            backgroundName.includes("Dark") || backgroundName === ""
+            isDark
               ? "md:text-lg text-gray-300 text-center"
               : "md:text-lg text-gray-500 text-center"
           }
@@ -32,7 +46,7 @@ function Info() {
         href="https://github.com/elrincondeldev/backgrounds-hub"
         target="_blank"
         className={
-          backgroundName.includes("Dark") || backgroundName === ""
+          isDark
             ? "flex items-center gap-2 text-lg text-gray-700 bg-gray-200 px-4 py-2 rounded-md hover:text-gray-900"
             : "flex items-center gap-2 text-lg text-gray-700 hover:text-gray-900"
         }
