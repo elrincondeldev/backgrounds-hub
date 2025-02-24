@@ -16,7 +16,9 @@ function Info() {
   const isDark =
     backgroundName.includes("Dark") ||
     (localStorageBackgroundName !== null &&
-      localStorageBackgroundName.includes("Dark") && !backgroundName.includes("Dark"));
+      localStorageBackgroundName.includes("Dark") &&
+      !backgroundName.includes("Dark")) ||
+    (backgroundName === "" && localStorageBackgroundName === null);
 
   return (
     <div className="flex flex-col gap-5 items-center">
