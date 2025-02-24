@@ -189,7 +189,7 @@ function Content() {
               className={
                 backgroundName.includes("Dark")
                   ? "group relative min-h-[300px] w-full overflow-hidden rounded-xl ring-1 ring-slate-200/50"
-                  : "group relative min-h-[300px] w-full overflow-hidden rounded-xl ring-1 ring-slate-900/10"
+                  : "group relative min-h-[300px] w-full overflow-hidden rounded-xl ring-1 ring-slate-900/50"
               }
             >
               <div className="absolute left-4 top-4 z-20">
