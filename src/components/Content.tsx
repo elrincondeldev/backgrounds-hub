@@ -4,19 +4,13 @@ import { useBackgroundStore } from "../store/backgroundStore";
 // Minimal Dark Backgrounds
 import {
   MinimalLight,
-  MinimalLightWithNoise,
-  MinimalLightGradient,
-  MinimalLightSpotlight,
   MinimalGrid,
   MinimalDarkGrid,
   MinimalDots,
   MinimalDarkDots,
-  MinimalGradientSubtle,
   MinimalSpotlightPattern,
   MinimalDarkSpotlightPattern,
   SoftGradientBlue,
-  SoftGradientGray,
-  MinimalVignette,
   AuroraBorealis,
   CrystalMorphism,
   NebulaBackground,
@@ -24,9 +18,13 @@ import {
   GeometricArt,
   LiquidGradient,
   CyberGrid,
-  FrostedGlass,
   RainbowMesh,
   NeonPulse,
+  CosmicDust,
+  GradientWaves,
+  MatrixRain,
+  PastelMesh,
+  NorthernLights,
 } from "./Backgrounds";
 
 const backgrounds = [
@@ -34,24 +32,6 @@ const backgrounds = [
     component: MinimalLight,
     name: "MinimalLight",
     displayName: "Minimal Light",
-    isDark: false,
-  },
-  {
-    component: MinimalLightWithNoise,
-    name: "MinimalLightWithNoise",
-    displayName: "Minimal Light with Noise",
-    isDark: false,
-  },
-  {
-    component: MinimalLightGradient,
-    name: "MinimalLightGradient",
-    displayName: "Minimal Light Gradient",
-    isDark: false,
-  },
-  {
-    component: MinimalLightSpotlight,
-    name: "MinimalLightSpotlight",
-    displayName: "Minimal Light Spotlight",
     isDark: false,
   },
   {
@@ -79,12 +59,6 @@ const backgrounds = [
     isDark: true,
   },
   {
-    component: MinimalGradientSubtle,
-    name: "MinimalGradientSubtle",
-    displayName: "Minimal Gradient Subtle",
-    isDark: false,
-  },
-  {
     component: MinimalSpotlightPattern,
     name: "MinimalSpotlightPattern",
     displayName: "Minimal Spotlight Pattern",
@@ -103,27 +77,9 @@ const backgrounds = [
     isDark: false,
   },
   {
-    component: SoftGradientGray,
-    name: "SoftGradientGray",
-    displayName: "Soft Gradient Gray",
-    isDark: false,
-  },
-  {
-    component: MinimalVignette,
-    name: "MinimalVignette",
-    displayName: "Minimal Vignette",
-    isDark: false,
-  },
-  {
     component: CyberGrid,
     name: "DarkCyberGrid",
     displayName: "Cyber Grid",
-    isDark: false,
-  },
-  {
-    component: FrostedGlass,
-    name: "FrostedGlass",
-    displayName: "Frosted Glass",
     isDark: false,
   },
   {
@@ -173,6 +129,36 @@ const backgrounds = [
     name: "DarkLiquidGradient",
     displayName: "Liquid Gradient",
     isDark: false,
+  },
+  {
+    component: CosmicDust,
+    name: "DarkCosmicDust",
+    displayName: "Cosmic Dust",
+    isDark: true,
+  },
+  {
+    component: GradientWaves,
+    name: "GradientWaves",
+    displayName: "Gradient Waves",
+    isDark: false,
+  },
+  {
+    component: MatrixRain,
+    name: "DarkMatrixRain",
+    displayName: "Matrix Rain",
+    isDark: true,
+  },
+  {
+    component: PastelMesh,
+    name: "PastelMesh",
+    displayName: "Pastel Mesh",
+    isDark: false,
+  },
+  {
+    component: NorthernLights,
+    name: "DarkNorthernLights",
+    displayName: "Northern Lights",
+    isDark: true,
   },
 ];
 
