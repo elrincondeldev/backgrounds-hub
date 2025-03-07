@@ -22,6 +22,8 @@ const Buttons: React.FC<ButtonsProps> = ({ component, name }) => {
       setShowToast(true);
     } catch (err) {
       console.error("Failed to copy:", err);
+      setToastMessage("Failed to copy code to clipboard");
+      setShowToast(true);
     }
   };
 
@@ -34,9 +36,13 @@ const Buttons: React.FC<ButtonsProps> = ({ component, name }) => {
       setToastMessage("Background applied! Scroll to top to see it.");
       setShowToast(true);
       // Dispatch custom event to notify Welcome component
-      window.dispatchEvent(new Event("backgroundChanged"));
+      window.dispatchEvent(new CustomEvent("backgroundChanged:" + name, {
+        detail: { backgroundName: name }
+      }));
     } catch (err) {
       console.error("Failed to preview:", err);
+      setToastMessage("Failed to apply background");
+      setShowToast(true);
     }
   };
 
