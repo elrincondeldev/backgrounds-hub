@@ -36,7 +36,7 @@ const Buttons: React.FC<ButtonsProps> = ({ component, name }) => {
       setToastMessage("Background applied! Scroll to top to see it.");
       setShowToast(true);
       // Dispatch custom event to notify Welcome component
-      window.dispatchEvent(new CustomEvent("backgroundChanged:" + name, {
+      window.dispatchEvent(new CustomEvent("backgroundChanged", {
         detail: { backgroundName: name }
       }));
     } catch (err) {
@@ -47,27 +47,25 @@ const Buttons: React.FC<ButtonsProps> = ({ component, name }) => {
   };
 
   return (
-    <>
-      <div className="flex flex-row gap-4">
-        <button
-          className="rounded-md bg-slate-700 px-2 py-1 text-xs font-medium text-white cursor-pointer hover:bg-slate-800 transition-colors"
-          onClick={handlePreview}
-        >
-          preview
-        </button>
-        <button
-          className="rounded-md bg-slate-700 px-2 py-1 text-xs cursor-pointer font-medium text-white hover:bg-slate-800 transition-colors"
-          onClick={copyToClipboard}
-        >
-          copy code
-        </button>
-      </div>
-      <Toast
-        message={toastMessage}
-        show={showToast}
-        onClose={() => setShowToast(false)}
+    <div className="flex gap-2">
+      <button
+        onClick={handlePreview}
+        className="rounded-md bg-white cursor-pointer px-2 py-1 text-xs font-medium text-gray-700 shadow-sm backdrop-blur-md hover:bg-white/60 ease-in-out duration-300"
+      >
+        preview
+      </button>
+      <button
+        onClick={copyToClipboard}
+        className="rounded-md cursor-pointer bg-white px-2 py-1 text-xs font-medium text-gray-700 shadow-sm backdrop-blur-md hover:bg-white/60 ease-in-out duration-300"
+      >
+        copy code
+      </button>
+      <Toast 
+        message={toastMessage} 
+        show={showToast} 
+        onClose={() => setShowToast(false)} 
       />
-    </>
+    </div>
   );
 };
 
